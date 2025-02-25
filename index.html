@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organia - Organic Food Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+            href="scss/custom.css"
+            rel="stylesheet">
+  </head>
+
+  <body>
+  <header class="header d-flex flex-column justify-content-between vh-100 gap-0">
+    <div class="container">
+    <nav class="navbar navbar-expand-xl justify-content-end">
+        <a href="#" class="navbar-brand d-flex align-items-center me-auto">
+          <img class="d-none d-sm-inline-block" src="images/logo/Logo.png" alt="logo" width="155" height="223" loading="lazy">
+          <span data-effect ="textStretchEffect">Organick</span>
+        </a>
+        <button class="btn btn-cart text-nowrap order-xl-last" type="button">Cart (0)</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-effect="wave">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-effect="wave">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-effect="wave">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-effect="wave">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-effect="wave">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-effect="wave">News</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    </div>
+    <div class="hero flex-grow-1 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-6 d-flex flex-column  justify-content-center align-items-center align-items-xl-start" data-effect="erstScreen">
+            <h1 class="h1 text-center text-lg-start"  data-effect-order="1" data-effect="print">Choose the best healthier way <br> of life</h1>
+            <p class="lead order-first" data-effect="show"  data-effect-order="2">100% Natural Food</p>
+            <a href="#" class="btn btn-ico-arrow btn-light"  data-effect-order="3" data-effect="show">
+              <span>Explore Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="container">
+        <div class="card-group gap-3 overflow-x-hidden">
+          <div class="card card_left bg bg-img" data-animation="shiftRight">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Get Garden Fresh Fruits</h2>
+              <h3 class="lead  order-first">Natural!!</h3>
+            </div>
+          </div>
+          <div class="card card_right bg bg-img" data-animation="shiftLeft">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title">Get 10% off on Vegetables</h2>
+              <h3 class="lead order-first">Offer!!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about bg bg-img">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col col-lg-6 d-flex flex-column gap-4">
+            <div class="d-flex flex-column">
+              <h2 class="text-center text-lg-start" data-animation="showText" data-animation-delay=".5s">We Believe in Working Accredited Farmers</h2>
+              <h3 class="lead order-first align-self-center align-self-lg-start" data-animation="showText" data-animation-delay="0">About Us</h3>
+              <p class="about-text text-center  text-lg-start mb-0"  data-animation="showText" data-animation-delay="1s">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+            </div>
+            <div class="d-flex flex-column gap-5">
+              <div class="card align-items-center gap-2 flex-sm-row" data-animation="showText" data-animation-delay="1.5s">
+                <div class="card-img d-flex align-items-center justify-content-center">
+                  <img src="images/svg/about/top.svg" class="img-fluid" alt="ico">
+                </div>
+                <div class="card-content text-center text-sm-start">
+                  <h3 class="card-title">Organic Foods Only</h3>
+                  <p class="card-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="card align-items-center flex-sm-row gap-2" data-animation="showText" data-animation-delay="2s">
+                <div class="card-img d-flex align-items-center justify-content-center">
+                  <img src="images/svg/about/bottom.svg" class="img-fluid" alt="ico">
+                </div>
+                <div class="card-content text-center text-sm-start">
+                  <h3 class="card-title">Quality Standards</h3>
+                  <p class="card-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-ico-arrow btn-dark ms-auto me-auto ms-lg-0" data-animation="showText" data-animation-delay="2.5s">
+              <span>Shop Now</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="row products-title">
+          <div class="col d-flex flex-column text-center">
+            <h2 data-animation="showText" data-animation-delay="0.3s">Our Products</h2>
+            <p class="lead  order-first" data-animation="showText">Categories</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center products-content">
+          <div class="col" data-animation="scale" data-animation-delay="0.2s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-1.png" class="card-img-top" width="336" height="324" alt="Брокколи" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Calabrese Broccoli</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$13.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.1s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-2.png" class="card-img-top" width="336" height="375" alt="Banana" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Fresh</span>
+                <h3 class="card-title">Fresh Banana Fruites</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$14.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.4s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-3.png" class="card-img-top" width="328" height="328" alt="White Nuts" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Millets</span>
+                <h3 class="card-title">White Nuts</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$15.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.3s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-4.png" class="card-img-top" width="331" height="330" alt="Tomato" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Vegan Red Tomato</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$17.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.4s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-5.png" class="card-img-top" width="335" height="359" alt="Mung Bean" loading="lazy">
+              <article class="card-body">
+                <span class="badge bg-primary-color position-absolute">Health</span>
+                <h3 class="card-title">Mung Bean</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$11.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </article>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.2s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-6.png" class="card-img-top" width="251" height="334" alt="Nuts" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Nuts</span>
+                <h3 class="card-title">Brown Hazelnut</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$12.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.3s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-7.png" class="card-img-top" width="336" height="392" alt="Eggs" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Fresh</span>
+                <h3 class="card-title">Eggs</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$17.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.1s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-8.png" class="card-img-top" width="336" height="362" alt="Брокколи" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Fresh</span>
+                <h3 class="card-title">Zelco Suji Elaichi Rusk</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$15.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button class="btn btn-ico-arrow btn-dark" type="button" data-animation="showText" data-animation-delay="0.3s">
+            <span>Load More</span>
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="feedback bg bg-img">
+      <div class="container text-center">
+        <div class="row">
+          <h2 data-animation="showText" data-animation-delay="1s">What Our Customer Saying?</h2>
+          <p class="lead order-first" data-animation="showText" data-animation-delay=".5s">Testimonial</p>
+        </div>
+        <div id="carouselFeedback" class="carousel slide" data-animation="showText" data-animation-delay="1.5s">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselFeedback" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselFeedback" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselFeedback" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure class="comment d-flex flex-column align-items-center">
+                <img src="images/photo/feedback/Sara.jpg" alt="photo" class="img-fluid rounded-circle" width="116" height="115">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  <span class="comment-name">Sara Taylor</span>
+                  <span class="comment-job">Consumer</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="comment d-flex flex-column align-items-center">
+                <img src="images/photo/feedback/Sara.jpg" alt="photo" class="img-fluid rounded-circle" width="116" height="115">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  <span class="comment-name">Sara</span>
+                  <span class="comment-job">Consumer</span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="comment d-flex flex-column align-items-center">
+                <img src="images/photo/feedback/Sara.jpg" alt="photo" class="img-fluid rounded-circle" width="116" height="115">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                </div>
+                <blockquote class="blockquote">
+                  <p>Simply dummy text of the printing and typesetting industry.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  <span class="comment-name">Taylor</span>
+                  <span class="comment-job">Consumer</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeedback" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFeedback" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+        <div id="carouselStatistic"  class="carousel slide carousel-fade" data-animation="showText" data-animation-delay="2s">
+          <div class="carousel-inner d-md-flex justify-content-md-center align-items-md-center gap-md-3">
+            <div class="carousel-item active">
+              <p class="d-flex flex-column justify-content-center align-items-center gap-1">
+                <span>100%</span>
+                <span>Organic</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-flex flex-column justify-content-center align-items-center gap-1">
+                <span>285</span>
+                <span>Active Product</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-flex  flex-column justify-content-center align-items-center gap-1">
+                <span>350+</span>
+                <span>Organic Orchads</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-flex flex-column justify-content-center align-items-center gap-1">
+                <span>25+</span>
+                <span>Years of Farming</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="offer bg">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 offer-title">
+          <div class="col d-flex flex-column">
+            <h2 class="text-white-color" data-animation="showText" data-animation-delay="0.3s">We Offer Organic For You</h2>
+            <p class="lead order-first mb-3" data-animation="showText">Offer</p>
+          </div>
+          <div class="col align-self-end">
+            <a href="#" class="btn btn-ico-arrow btn-light ms-auto" data-animation="showText" data-animation-delay="0.5s">
+              <span>View All Product</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class=" row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
+          <div class="col" data-animation="scale" data-animation-delay="0.3s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-9.png" class="card-img-top" width="335" height="310" alt="Mung Bean" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Mung Bean</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$13.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.1s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-10.png" class="card-img-top" width="199" height="298" alt="Brown Hazelnut" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Brown Hazelnut</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$17.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.4s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-11.png" class="card-img-top" width="311" height="310" alt="Onion" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Onion</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$17.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.2s">
+            <article class="card card-custom h-100 justify-content-end m-auto">
+              <img src="images/photo/products/Photo-12.png" class="card-img-top" width="321" height="320" alt="Cabbage" loading="lazy">
+              <div class="card-body">
+                <span class="badge bg-primary-color position-absolute">Vegetable</span>
+                <h3 class="card-title">Cabbage</h3>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="card-price">
+                    <span class="text-decoration-line-through">$20.00</span>
+                    <span class="fw-bold">$17.00</span>
+                  </div>
+                  <div>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                    <i class="bi bi-star-fill text-warning" aria-label="Star"></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="we bg bg-img">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col col-lg-6">
+            <div class="info d-flex flex-column gap-4">
+              <div class="info-title d-flex flex-column gap-1">
+                <h2 data-animation="showText" data-animation-delay="1s">Econis is a Friendly Organic Store</h2>
+                <p class="lead order-first" data-animation="showText" data-animation-delay="0.5s">Eco Friendly</p>
+              </div>
+              <div class="d-flex flex-column justify-content-between gap-4">
+                <div data-animation="showText" data-animation-delay="1.5s">
+                  <h3 class="info_subtitle">Start with Our Company First</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  </p>
+                </div>
+                <div data-animation="showText" data-animation-delay="2s">
+                  <h3 class="info_subtitle">Learn How to Grow Yourself</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Accusantium commodi dicta esse ex facilis ipsa, labore laborum libero maxime molestiae molestias nemo neque odit, quod sunt temporibus tenetur voluptate voluptates!</p>
+                </div>
+                <div data-animation="showText" data-animation-delay="2.5s">
+                  <h3 class="info_subtitle">Farming Strategies of Today</h3>
+                  <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery bg">
+      <div class="container-fluid">
+        <h2 class="visually-hidden text-center">gallery</h2>
+        <div class="row flex-column flex-sm-row gap-3">
+          <div class="col" data-animation="scale" data-animation-delay="0.2s">
+            <div class="card">
+              <img src="images/background/gallery-1.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h3 class="card-title text-center" data-animation="scale"  data-animation-delay="0.8s">Organic Juice</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.4s">
+            <div class="card">
+              <img src="images/background/gallery-2.jpg" class="card-img img-fluid" alt="...">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h3 class="card-title text-center" data-animation="scale"  data-animation-delay="1.2s">Organic Food</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-animation="scale" data-animation-delay="0.6s">
+            <div class="card">
+              <img src="images/background/gallery-3.jpg" class="card-img" alt="...">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h3 class="card-title text-center" data-animation="scale"  data-animation-delay="1s">Nuts Cookis</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 gy-3 blog-title">
+          <div class="col d-flex flex-column">
+            <h2 data-animation="showText" data-animation-delay="0.4s">Discover weekly content about organic food, & more</h2>
+            <p class="lead order-first" data-animation="showText" data-animation-delay="0.2s">News</p>
+          </div>
+          <div class="col d-flex justify-content-end align-items-end" data-animation="showText" data-animation-delay="0.6s">
+            <a href="#" class="btn btn-ico-arrow btn-white">
+              <span>More News</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2 gy-4 blog-content">
+          <div class="col position-relative d-flex justify-content-center align-items-center" data-animation="showText" data-animation-delay="0.8s">
+            <p class="badge position-absolute z-1 d-flex justify-content-center align-items-center">25 Nov</p>
+            <div class="card card-left">
+              <div class="card-body d-flex flex-column">
+                <div class="card-text">
+                  <h3>The Benefits of Vitamin D & How to Get It</h3>
+                  <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                </div>
+                <p class="order-first card-name"><i class="bi bi-person-fill"></i>
+                  By Rachi Card</p>
+                <a href="#" class="btn btn-ico-arrow btn-light">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col position-relative d-flex justify-content-center align-items-center" data-animation="showText" data-animation-delay="1s">
+            <p class="badge position-absolute z-1 d-flex justify-content-center align-items-center">25 Nov</p>
+           <div class="card card-right">
+             <div class="card-body d-flex flex-column">
+               <div class="card-text">
+                 <h3>Our Favourite Summertime Tommeto</h3>
+                 <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+               </div>
+               <p class="order-first card-name">
+                 <i class="bi bi-person-fill"></i>
+                 By Rachi Card</p>
+                 <a href="#" class="btn btn-ico-arrow btn-light">
+                   <span>Read More</span>
+                   <i class="bi bi-arrow-right"></i>
+                 </a>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container-fluid container-lg news-container bg bg-img">
+        <div class="row row-cols-1 row-cols-lg-2 justify-content-between align-items-center gap-5 gap-lg-0 subscribe">
+          <div class="col">
+            <h2 class="subscribe-title text-center" data-animation="showText" data-animation-delay="0.2s">Subscribe to our Newsletter</h2>
+          </div>
+          <div class="col">
+            <form class="d-xl-flex flex-row column-gap-1" data-animation="showText" data-animation-delay="0.4s">
+              <input type="email" id="subscribe" placeholder="Your Email Address" class="form-control">
+              <label for="subscribe"></label>
+              <button class="btn btn-ico-arrow btn-dark ms-md-auto w-100" type="submit">
+                <span>Subscribe</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-xl-3">
+        <div class="col text-center text-xl-end" data-animation="showText" data-animation-delay="0.2s">
+          <h2 class="footer-title">Contact Us</h2>
+          <div class="flex flex-column justify-content-center align-items-center align-content-center">
+            <div>
+              <h3 class="footer-subtitle">Email:</h3>
+              <p> needhelp@Organia.com</p>
+            </div>
+            <div>
+              <h3 class="footer-subtitle">Phone:</h3>
+              <p> 666 888 888</p>
+            </div>
+            <div>
+              <h3 class="footer-subtitle">Address:</h3>
+              <p> 88 road, borklyn street, USA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center" data-animation="showText" data-animation-delay="0.4s">
+          <a href="#" class="brand d-flex flex-row justify-content-center align-items-center">
+            <img src="images/logo/Logo.png" alt="logo" width="155" height="223" loading="lazy">
+            <span>Organick</span>
+          </a>
+          <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing </p>
+          <div class="social d-flex flex-row justify-content-center align-items-center">
+            <a class="social-item" href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="social-item" href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="social-item" href="#">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a class="social-item" href="#">
+              <i class="bi bi-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col  text-center text-xl-start" data-animation="showText" data-animation-delay="0.6s">
+          <h2 class="footer-title">Utility Pages</h2>
+          <ul class="list-unstyled footer-links">
+            <li class="">
+              <a href="#">Style Guide</a>
+            </li>
+            <li class="">
+              <a href="#">404 Not Found</a>
+            </li>
+            <li class="">
+              <a href="#">Password Protected</a>
+            </li>
+            <li class="">
+              <a href="#">Licences</a>
+            </li>
+            <li class="">
+              <a href="#">Changelog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <p class="col text-center copyright">
+          <span>Copyright ©</span>
+          <span>Organick</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/index.js" type="module"></script>
+  </body>
+</html>
