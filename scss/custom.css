@@ -10863,7 +10863,7 @@ section.news {
   --img-center-top: calc(1.875rem + 7.5vw);
   --img-right-top: calc(2.6875rem + 17.25vw);
   --img-right-bottom: calc(2.0625rem + 9.75vw);
-  background: url("../../../images/svg/hero/LeftBottom.svg") left bottom no-repeat, url("../../../images/svg/hero/LeftTop.svg") left top no-repeat, url("../../../images/svg/hero/TopCenter.svg") center top no-repeat, url("../../../images/svg/hero/RightTop.svg") right top no-repeat, url("../../../images/svg/hero/RightBottom.svg") right bottom no-repeat, url("../../../images/background/banner.png") center center no-repeat;
+  background: url("../images/svg/hero/LeftBottom.svg") left bottom no-repeat, url("../images/svg/hero/LeftTop.svg") left top no-repeat, url("../images/svg/hero/TopCenter.svg") center top no-repeat, url("../images/svg/hero/RightTop.svg") right top no-repeat, url("../images/svg/hero/RightBottom.svg") right bottom no-repeat, url("../images/background/banner.png") center center no-repeat;
   background-size: var(--img-left-top) auto, var(--img-left-bottom) auto, var(--img-center-top) auto, var(--img-right-top) auto, var(--img-right-bottom) auto, cover;
 }
 @media (min-width: 1200px) {

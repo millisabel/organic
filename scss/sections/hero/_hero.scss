@@ -9,12 +9,12 @@
   @include rfs(150px, --img-right-bottom);
 
   background:
-          url("../../../images/svg/hero/LeftBottom.svg") left bottom  no-repeat,
-          url("../../../images/svg/hero/LeftTop.svg") left top no-repeat,
-          url("../../../images/svg/hero/TopCenter.svg") center top no-repeat,
-          url("../../../images/svg/hero/RightTop.svg") right top no-repeat,
-          url("../../../images/svg/hero/RightBottom.svg") right bottom no-repeat,
-          url('../../../images/background/banner.png') center center no-repeat;
+          url("../images/svg/hero/LeftBottom.svg") left bottom  no-repeat,
+          url("../images/svg/hero/LeftTop.svg") left top no-repeat,
+          url("../images/svg/hero/TopCenter.svg") center top no-repeat,
+          url("../images/svg/hero/RightTop.svg") right top no-repeat,
+          url("../images/svg/hero/RightBottom.svg") right bottom no-repeat,
+          url('../images/background/banner.png') center center no-repeat;
 
   background-size:
           var(--img-left-top) auto,
