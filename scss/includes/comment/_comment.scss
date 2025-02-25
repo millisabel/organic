@@ -1,0 +1,46 @@
+//comment
+
+.comment{
+  --comment-color: #525c60;
+
+  @include padding-top(60px);
+  @include padding-bottom(60px);
+  margin-bottom: 0;
+  gap: 20px;
+
+  color: var(--comment-color);
+  line-height: 165%;
+
+  &-name{
+    --bs-body-font-family: "roboto";
+    --bs-body-font-weight: 600;
+
+    color: var(--bs-primary-color);
+    font-size: 25px;
+    font-family: var(--bs-body-font-family), sans-serif;
+    font-weight: var(--bs-body-font-weight);
+  }
+
+  &-job{
+    font-size: 15px;
+  }
+  .blockquote{
+    font-size: 14px;
+
+    @include media-breakpoint-up(md){
+      font-size: 18px;
+    }
+
+    &-footer{
+      margin: 0;
+
+      span{
+        display: block;
+      }
+
+      &:before{
+        content: "";
+      }
+    }
+  }
+}

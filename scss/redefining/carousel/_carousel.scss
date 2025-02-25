@@ -1,0 +1,79 @@
+//carousel
+
+#carouselFeedback{
+  .carousel {
+    &-indicators{
+      *[data-bs-target]{
+        border-radius: 50%;
+        background-color: #c4c4c4;
+
+        &.active{
+          background-color: #7eb693;
+        }
+      }
+    }
+
+    &-inner{
+      padding-left: 15px;
+      padding-right: 15px;
+
+      @include media-breakpoint-up(md){
+        @include padding-left(164px);
+        @include padding-right(164px);
+      }
+    }
+
+    &-item{
+      height: 500px;
+    }
+  }
+}
+
+#carouselStatistic{
+  --item-size: 120px;
+
+  .carousel{
+    &-item{
+      padding: 5px;
+
+      @include media-breakpoint-up(md){
+        display: block;
+        width: max-content;
+        margin-right: 0;
+
+        opacity: 1;
+      }
+
+      p{
+        width: var(--item-size);
+        height: var(--item-size);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        border: 11px solid #fff;
+        outline: 4px solid #7eb693;
+        border-radius: 50%;
+
+        background: #f1f1f1;
+      }
+
+      span{
+        --bs-body-font-weight: 400;
+        --bs-body-font-size: 18px;
+        --bs-body-color: var(--bs-primary-color);
+
+        color: var(--bs-body-color);
+        font-size: var(--bs-body-font-size);
+
+        &:first-child{
+          --bs-body-font-family: "Roboto";
+          --bs-body-font-weight: 700;
+          --bs-body-font-size: 32px;
+
+          font-weight: var(--bs-body-font-weight);
+          font-family: var(--bs-body-font-family), sans-serif;
+        }
+      }
+    }
+  }
+}

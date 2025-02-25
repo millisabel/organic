@@ -1,0 +1,28 @@
+//subscribe
+
+.subscribe{
+
+  &-title{
+    @include font-size(50px);
+    font-weight: 800;
+  }
+
+  input{
+    padding: 25px 20px;
+    border-radius: 16px;
+    border-width: 0;
+
+    text-align: center;
+    font-style: italic;
+
+    background: var(--bs-white-color);
+  }
+
+  .btn{
+    --btn-max-width: 100%;
+
+    @include media-breakpoint-up(md){
+      --btn-max-width: max-content;
+    }
+  }
+}

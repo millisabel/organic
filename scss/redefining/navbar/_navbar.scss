@@ -1,0 +1,96 @@
+//navbar
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  @include rfs(3.85rem, --bs-navbar-padding-y);
+
+  --bs-emphasis-color-rgb: var(--bs-primary-color-rgb);
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-hover-color: rgba(var(--bs-accent-color-rgb), 1);
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color:  rgba(var(--bs-lead-color-rgb), 1);
+
+  --bs-navbar-brand-padding-y: 0;
+  @include rfs(2.375rem, --bs-navbar-brand-font-size);
+  --bs-navbar-brand-margin-end: 3rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+
+  --bs-navbar-nav-link-padding-x:  1.5rem;
+
+  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.2);
+  --bs-navbar-toggler-border-radius:0.375rem;
+  --bs-navbar-toggler-font-size: 2.3rem;
+
+  --navbar-font-family: "Roboto";
+  --navbar-body-font-weight: 700;
+
+
+  font-family: var(--navbar-font-family), sans-serif;
+  font-weight: var(--navbar-body-font-weight);
+
+  @include media-breakpoint-down(xxl) {
+    gap: 2rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    gap: 1rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    gap: 0;
+  }
+
+  &-brand{
+    gap: 10px;
+
+    img{
+      --navbar-brend-size: 2.25rem;
+
+      @include rfs(2.25rem, --navbar-brend-size);
+      max-width: var(--navbar-brend-size);
+      min-width: 50px;
+      height: auto;
+    }
+  }
+
+  &-toggler{
+    @include media-breakpoint-down(xl) {
+      --bs-navbar-toggler-border-radius: 50%;
+      --bs-navbar-toggler-padding-y: 5px;
+      --bs-navbar-toggler-padding-x: 5px;
+
+      mask: var(--bs-navbar-toggler-icon-bg) no-repeat center / contain;
+      -webkit-mask: var(--bs-navbar-toggler-icon-bg) no-repeat center / contain;
+      background-color: var(--bs-primary-color);
+
+      transition: transform .3s ease;
+
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &-nav{
+    @include media-breakpoint-down(xl) {
+      gap:  2rem;
+      padding-top: 4rem;
+      border-top: 1px solid var(--bs-lead-color);
+
+      background: var(--bs-body-bg);
+    }
+  }
+}
+
+.nav-link{
+  --bs-nav-link-font-size: 1.25rem;
+  
+  &.active{
+     &:hover{
+       cursor: text;
+     }
+  }
+}
+
+

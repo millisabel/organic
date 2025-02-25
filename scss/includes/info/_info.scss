@@ -1,0 +1,25 @@
+//info
+
+.info{
+  padding: 25px 15px;
+  border-radius: 30px;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: #525c60;
+  line-height: 165%;
+
+  background: var(--bs-white-color);
+
+  @include media-breakpoint-up(lg){
+    padding: 80px 90px;
+    margin-left: -90px;
+  }
+
+  &_subtitle{
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+}

@@ -1,0 +1,83 @@
+//custom variables scss
+
+// BREAKPOINTS
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+  //   change breakpoints
+        lg: 1024px,
+        xl: 1280px,
+        xxl: 1440px,
+  //   new breakpoints
+        xxxl: 1600px,
+        xxxxl: 1920px
+);
+
+$my-container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1280px,
+  //   NOTE: new width
+        xxxl: 1400px,
+        xxxxl: 1600px,
+);
+
+// COLORS
+$primary-color: #274C5B;
+$accent-color: #EFD372;
+$lead-color: #68A47F;
+$white-color: #FFFFFF;
+$gray-color: #F9F8F8;
+//$secondary-color: #7EB693;
+//$dark-color: #525C60;
+//$tertiary-color: #F9F8F8;
+//$light-color: #fdfdfd;
+//$gray-light: #D4D4D4;
+//$gray-extra-light: #EFF6F1;
+
+$custom-colors: (
+        "primary-color":   $primary-color,
+        "accent-color":    $accent-color,
+        "lead-color":      $lead-color,
+        "white-color":     $white-color,
+        "gray-color":  $gray-color,
+        //"secondary": $secondary-color,
+        //"tertiary":  $tertiary-color,
+        //"dark":      $dark-color,
+        //"light":     $light-color,
+        //"$gray-light":   $gray-light,
+        //"$gray-extra-light":   $gray-extra-light,
+);
+
+$colors: ();
+$grays: ();
+$theme-colors: ();
+$theme-colors-text: ();
+$theme-colors-bg-subtle: ();
+$theme-colors-border-subtle: ();
+
+$theme-colors: map-merge((), $custom-colors);
+
+// TYPOGRAPHY
+$headings-color: $primary-color;
+$headings-font-family: "Roboto", sans-serif;
+$headings-font-weight: 600;
+$headings-margin-bottom: 0;
+
+$h1-font-size: toRem(70);
+$h2-font-size: toRem(50);
+$h3-font-size: toRem(40);
+$h4-font-size: toRem(35);
+$h5-font-size: toRem(30);
+$h6-font-size: toRem(25);
+
+$link-color: $primary-color;
+$link-hover-color: darken($link-color, 15%);
+
+//CAROUSEL
+$carousel-indicator-width: 8px;
+$carousel-indicator-height: 8px;
+$carousel-indicator-active-bg: #C4C4C4;

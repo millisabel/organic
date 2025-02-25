@@ -1,0 +1,26 @@
+section{
+  @include padding-top(180px);
+  @include padding-bottom(200px);
+
+  &.banner{
+    @include padding-top(155px);
+    @include padding-top(190px);
+  }
+
+  &.about {
+    @include padding-top(300px);
+
+    @include media-breakpoint-up(lg){
+      @include padding-top(180px);
+    }
+  }
+
+  &.feedback {
+    @include padding-top(165px);
+    @include padding-bottom(165px);
+  }
+
+  &.news{
+    padding: 0;
+  }
+}

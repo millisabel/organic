@@ -1,0 +1,97 @@
+// animations
+
+*[data-animation] {
+  will-change: transform, opacity;
+  opacity: 0;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.animate-shift-right{
+  animation-name: shiftRight;
+}
+
+.animate-shift-left {
+  animation-name: shiftLeft;
+}
+
+.animate-show-text {
+  animation-name: showText;
+}
+
+.animate-scale {
+  animation-name: scale;
+}
+
+@keyframes shiftRight {
+  0% {
+    transform: translate3d(-100vw, 0, 0) skewX(-4deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translate3d(3%, 0, 0) skewX(-2deg);
+    opacity: 1;
+  }
+  90% {
+    transform: translate3d(-2%, 0, 0) skewX(1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) skewX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftLeft {
+  0% {
+    transform: translate3d(100vw, 0, 0) skewX(4deg);
+    opacity: 0;
+  }
+  70% {
+    transform: translate3d(.3%, 0, 0) skewX(2deg);
+    opacity: 1;
+  }
+  90% {
+    transform: translate3d(2%, 0, 0) skewX(-1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) skewX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

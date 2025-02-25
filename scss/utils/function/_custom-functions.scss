@@ -1,0 +1,7 @@
+//custom function
+$fs: 16;
+
+@function toRem($value, $base-value: $fs) {
+  $remValue: ($value / $base-value) * 1rem;
+  @return $remValue;
+}

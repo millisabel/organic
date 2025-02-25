@@ -1,0 +1,19 @@
+//brand
+
+.brand{
+  gap: 10px;
+
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  text-decoration: none;
+
+  span{
+    @include font-size(38px);
+  }
+
+  img{
+    width: 36px;
+    height: auto;
+  }
+}

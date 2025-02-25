@@ -1,0 +1,63 @@
+//bg
+
+.bg{
+  --bg-background: #ffffff;
+
+  background: var(--bg-background);
+
+  &-img{
+    --bg-img-url: none;
+    --bg-img-repeat: no-repeat;
+    --bg-img-position: center center;
+    --bg-img-size: cover;
+
+    background-image: var(--bg-img-url);
+    background-repeat: var(--bg-img-repeat);
+    background-position: var(--bg-img-position);
+    background-size: var(--bg-img-size);
+  }
+
+  &.about {
+    --bs-body-font-size: 18px;
+    --bs-body-color: #525c60;
+    --bg-background: #f7f6f6;
+    --bg-img-url: url("../../../images/photo/about/photo.png");
+    --bg-img-position: top center;
+    --bg-img-size: 30% auto;
+
+    font-size: var(--bs-body-font-size);
+    color: var(--bs-body-color);
+    line-height: 165%;
+
+    @include media-breakpoint-up(lg){
+      --bg-img-position: left center;
+      --bg-img-size: 50% auto;
+    }
+  }
+
+  &.feedback{
+    --bg-img-url: url("../../../images/background/feedback.jpg");
+  }
+
+  &.offer{
+    --bg-background: #274b5a;
+  }
+
+  &.we{
+    --bg-img-url: url("../../../images/background/we.jpg");
+
+    @include media-breakpoint-up(lg){
+      --bg-img-size: 50vw 100%;
+      --bg-img-position: left 0;
+    }
+  }
+
+  &.gallery{
+    --bg-background: #f1f8f4;
+  }
+
+  &.news-container{
+    --bg-img-url: url("../../../images/background/news.jpg");
+    --bg-img-size: cover;
+  }
+}

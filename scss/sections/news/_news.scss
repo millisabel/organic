@@ -1,0 +1,16 @@
+//NEWS
+
+.news{
+  --bs-heading-color: var(--bs-white-color);
+
+  &-container{
+    @include padding-top(105px);
+    @include padding-bottom(105px);
+    @include padding-left(70px);
+    @include padding-right(70px);
+
+    @include media-breakpoint-up(lg){
+      border-radius: 16px;
+    }
+  }
+}

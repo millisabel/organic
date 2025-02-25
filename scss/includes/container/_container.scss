@@ -1,0 +1,15 @@
+//container
+
+.container-xxxl {
+  @include make-container();
+  @include media-breakpoint-up(xxxl) {
+    max-width: map-get($my-container-max-widths, xxxl);
+  }
+}
+
+.container-xxxxl {
+  @include make-container();
+  @include media-breakpoint-up(xxxxl) {
+    max-width: map-get($my-container-max-widths, xxxxl);
+  }
+}

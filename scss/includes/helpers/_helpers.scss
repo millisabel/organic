@@ -1,0 +1,15 @@
+header,
+section,
+footer{
+  outline: 1px dotted red;
+}
+
+.row,
+*[class*="row-"]{
+  outline: 1px solid rgb(7, 27, 241);
+}
+
+.col,
+*[class*="col-"]{
+  outline: 1px solid rgb(221, 11, 11);
+}
