@@ -3,7 +3,7 @@ function animations(itemSelector) {
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            if (!entry.isIntersecting || entry.target.classList.contains('animated')) return;
+            if (!entry.isIntersecting) return;
 
             const item = entry.target;
             const animationClassMap = new Map([
