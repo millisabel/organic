@@ -10613,7 +10613,7 @@ textarea.form-control-lg {
   --bs-body-font-size: 18px;
   --bs-body-color: #525c60;
   --bg-background: #f7f6f6;
-  --bg-img-url: url("../images/photo/about/photo.png");
+  --bg-img-url: url("../images/photo/about/Photo.png");
   --bg-img-position: top center;
   --bg-img-size: 30% auto;
   font-size: var(--bs-body-font-size);
