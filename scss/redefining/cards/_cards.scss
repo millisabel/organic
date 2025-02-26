@@ -72,13 +72,13 @@
 
     &_left{
       &.bg-img{
-        --bg-img-url: url("../../../images/photo/banner/left.jpg");
+        --bg-img-url: url("../images/photo/banner/left.jpg");
       }
     }
 
     &_right{
       &.bg-img{
-          --bg-img-url: url("../../../images/photo/banner/right.jpg");
+          --bg-img-url: url("../images/photo/banner/right.jpg");
       }
     }
 
@@ -171,12 +171,12 @@
 
 
       &-left{
-        background: url("../../../images/photo/blog/left.png") 0 0 no-repeat;
+        background: url("../images/photo/blog/left.png") 0 0 no-repeat;
         background-size: cover;
       }
 
       &-right{
-        background: url("../../../images/photo/blog/right.png") 0 0 no-repeat;
+        background: url("../images/photo/blog/right.png") 0 0 no-repeat;
         background-size: cover;
       }
 
