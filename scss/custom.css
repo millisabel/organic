@@ -10613,7 +10613,7 @@ textarea.form-control-lg {
   --bs-body-font-size: 18px;
   --bs-body-color: #525c60;
   --bg-background: #f7f6f6;
-  --bg-img-url: url("../../../images/photo/about/photo.png");
+  --bg-img-url: url("../images/photo/about/photo.png");
   --bg-img-position: top center;
   --bg-img-size: 30% auto;
   font-size: var(--bs-body-font-size);
@@ -10627,13 +10627,13 @@ textarea.form-control-lg {
   }
 }
 .bg.feedback {
-  --bg-img-url: url("../../../images/background/feedback.jpg");
+  --bg-img-url: url("../images/background/feedback.jpg");
 }
 .bg.offer {
   --bg-background: #274b5a;
 }
 .bg.we {
-  --bg-img-url: url("../../../images/background/we.jpg");
+  --bg-img-url: url("../images/background/we.jpg");
 }
 @media (min-width: 1024px) {
   .bg.we {
@@ -10645,7 +10645,7 @@ textarea.form-control-lg {
   --bg-background: #f1f8f4;
 }
 .bg.news-container {
-  --bg-img-url: url("../../../images/background/news.jpg");
+  --bg-img-url: url("../images/background/news.jpg");
   --bg-img-size: cover;
 }
 

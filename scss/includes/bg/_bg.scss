@@ -21,7 +21,7 @@
     --bs-body-font-size: 18px;
     --bs-body-color: #525c60;
     --bg-background: #f7f6f6;
-    --bg-img-url: url("../../../images/photo/about/photo.png");
+    --bg-img-url: url("../images/photo/about/photo.png");
     --bg-img-position: top center;
     --bg-img-size: 30% auto;
 
@@ -36,7 +36,7 @@
   }
 
   &.feedback{
-    --bg-img-url: url("../../../images/background/feedback.jpg");
+    --bg-img-url: url("../images/background/feedback.jpg");
   }
 
   &.offer{
@@ -44,7 +44,7 @@
   }
 
   &.we{
-    --bg-img-url: url("../../../images/background/we.jpg");
+    --bg-img-url: url("../images/background/we.jpg");
 
     @include media-breakpoint-up(lg){
       --bg-img-size: 50vw 100%;
@@ -57,7 +57,7 @@
   }
 
   &.news-container{
-    --bg-img-url: url("../../../images/background/news.jpg");
+    --bg-img-url: url("../images/background/news.jpg");
     --bg-img-size: cover;
   }
 }
