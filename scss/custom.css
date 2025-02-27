@@ -11055,6 +11055,9 @@ section.news {
     --navbar-brend-size: 2.25rem;
   }
 }
+.navbar-brand[href="#"]:hover {
+  cursor: text;
+}
 @media (max-width: 1279.98px) {
   .navbar-toggler {
     --bs-navbar-toggler-border-radius: 50%;

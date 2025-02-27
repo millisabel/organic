@@ -52,6 +52,10 @@
       min-width: 50px;
       height: auto;
     }
+
+    &[href="#"]:hover{
+      cursor: text;
+    }
   }
 
   &-toggler{

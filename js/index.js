@@ -11,7 +11,6 @@ erstScreenAnimation(
 );
 textStretchEffect("[data-effect ='textStretchEffect']");
 setupCarousel('#carouselStatistic');
-waveTextEffect("[data-effect ='wave']");
 animations("[data-animation]");
 
 
