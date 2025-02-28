@@ -1,7 +1,5 @@
 import setupCarousel from "./carouselStatic/carouselStatic.js";
-import waveTextEffect from "./waveTextEffect/waveTextEffect.js";
 import erstScreenAnimation from "./erstScreenAnimation/erstScreenAnimation.js";
-import textStretchEffect from "./textStretchEffect/textStretchEffect.js";
 import animations from "./animations/animations.js";
 
 erstScreenAnimation(
@@ -9,7 +7,6 @@ erstScreenAnimation(
     '[data-effect]',
     'data-effect-order',
 );
-textStretchEffect("[data-effect ='textStretchEffect']");
 setupCarousel('#carouselStatistic');
 animations("[data-animation]");
 

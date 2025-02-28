@@ -17,24 +17,6 @@
     background-size: var(--bg-img-size);
   }
 
-  &.about {
-    --bs-body-font-size: 18px;
-    --bs-body-color: #525c60;
-    --bg-background: #f7f6f6;
-    --bg-img-url: url("../images/photo/about/Photo.png");
-    --bg-img-position: top center;
-    --bg-img-size: 30% auto;
-
-    font-size: var(--bs-body-font-size);
-    color: var(--bs-body-color);
-    line-height: 165%;
-
-    @include media-breakpoint-up(lg){
-      --bg-img-position: left center;
-      --bg-img-size: 50% auto;
-    }
-  }
-
   &.feedback{
     --bg-img-url: url("../images/background/feedback.jpg");
   }
@@ -61,3 +43,4 @@
     --bg-img-size: cover;
   }
 }
+

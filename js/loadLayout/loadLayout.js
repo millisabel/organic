@@ -1,4 +1,5 @@
 import waveTextEffect from "../waveTextEffect/waveTextEffect.js";
+import textStretchEffect from "../textStretchEffect/textStretchEffect.js";
 
 document.addEventListener("DOMContentLoaded", loadLayout);
 
@@ -14,6 +15,7 @@ function loadLayout() {
             updateActiveLink();
             updateLogoLink();
             waveTextEffect("[data-effect ='wave']");
+            textStretchEffect("[data-effect ='textStretchEffect']");
         })
         .catch(error => console.error(error));
 

@@ -10609,23 +10609,6 @@ textarea.form-control-lg {
   background-position: var(--bg-img-position);
   background-size: var(--bg-img-size);
 }
-.bg.about {
-  --bs-body-font-size: 18px;
-  --bs-body-color: #525c60;
-  --bg-background: #f7f6f6;
-  --bg-img-url: url("../images/photo/about/Photo.png");
-  --bg-img-position: top center;
-  --bg-img-size: 30% auto;
-  font-size: var(--bs-body-font-size);
-  color: var(--bs-body-color);
-  line-height: 165%;
-}
-@media (min-width: 1024px) {
-  .bg.about {
-    --bg-img-position: left center;
-    --bg-img-size: 50% auto;
-  }
-}
 .bg.feedback {
   --bg-img-url: url("../images/background/feedback.jpg");
 }
@@ -10892,6 +10875,10 @@ section.news {
   }
 }
 
+body[data-page=about] .hero {
+  background: url("../images/pages/about/background/about-bg.png") center center no-repeat;
+}
+
 .products-title {
   margin-bottom: 40px;
 }
@@ -10899,8 +10886,30 @@ section.news {
   margin-bottom: 120px;
 }
 
+.about.bg {
+  --bs-body-font-size: 18px;
+  --bs-body-color: #525c60;
+  --bg-background: #f7f6f6;
+  --bg-img-url: url("../images/photo/about/Photo.png");
+  --bg-img-position: top center;
+  --bg-img-size: 30% auto;
+  font-size: var(--bs-body-font-size);
+  color: var(--bs-body-color);
+  line-height: 165%;
+}
+@media (min-width: 1024px) {
+  .about.bg {
+    --bg-img-position: left center;
+    --bg-img-size: 50% auto;
+  }
+}
 .about .row {
   --bs-gutter-x: 0;
+}
+
+body[data-page=about] .about.bg {
+  --bg-background: var(--bs-white-color);
+  --bg-img-url: url("../images/pages/about/background/about-uns-bg.png");
 }
 
 .offer-title {
