@@ -1,0 +1,13 @@
+//choose-us
+
+.choose-us{
+  background: var(--bs-gray-color);
+
+  .card-group > .card {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+}

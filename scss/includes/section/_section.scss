@@ -1,10 +1,17 @@
 section{
+  --bs-body-font-size: 18px;
+  --bs-body-color: #525c60;
+
+  font-size: var(--bs-body-font-size);
+  color: var(--bs-body-color);
+  line-height: 165%;
+
   @include padding-top(180px);
   @include padding-bottom(200px);
 
   &.banner{
     @include padding-top(155px);
-    @include padding-top(190px);
+    @include padding-bottom(190px);
   }
 
   &.about {

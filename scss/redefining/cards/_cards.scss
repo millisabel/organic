@@ -3,10 +3,14 @@
 .card{
   --bs-card-border-width: 0;
   --bs-card-border-radius: 30px;
+  --bs-card-spacer-y: 0;
+  --bs-card-spacer-x: 0;
 
   --bs-card-color: inherit;
   --bs-card-title-color: var(--bs-primary-color);
   --bs-card-bg: transparent;
+
+  --bs-body-font-size: inherit;
 
   --bs-card-cap-bg: transparent;
 
@@ -54,6 +58,117 @@
 
         margin-right: 7px;
         color: var(--bs-card-color);
+      }
+    }
+  }
+
+  &-benefit{
+    .card{
+
+      &-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+
+        width: 100%;
+        padding: 30px 27px;
+        border-radius: 49px;
+
+        font-size: 20px;
+
+        background: #ECECEC;
+
+        &::before{
+          --item-size: 11px;
+
+          content: "";
+
+          display: block;
+
+          width: var(--item-size);
+          height: var(--item-size);
+          padding: 5px;
+          border: 8px solid var(--bs-lead-color);
+          border-radius: 50%;
+
+          background: transparent;
+        }
+
+        @include media-breakpoint-up(lg){
+          width: 60%;
+        }
+      }
+
+      &-text{
+        padding: 12px 10px 24px;
+
+        @include media-breakpoint-up(lg){
+          padding: 12px 10px 24px 60px;
+        }
+      }
+    }
+  }
+
+  &-info{
+    --bs-card-spacer-y: 19px;
+    --bs-card-spacer-x: 35px;
+    --bs-card-bg: var(--bs-white-color);
+
+    --bs-body-font-size: 18px;
+
+    transition: box-shadow 0.5s ease-out;
+
+    @include media-breakpoint-up(sm){
+      width: 257px;
+      max-width: 257px;
+      min-width: 257px;
+    }
+
+    &:hover{
+
+      box-shadow: 0 0 10px 5px var(--bs-gray-color);
+      img{
+        transform: scale(1.3);
+      }
+    }
+
+    .card{
+
+      &-img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 50px;
+        margin: auto;
+
+        &-field{
+          --card-img-field-size: 95px;
+          --card-img-field-border-radius: 18px;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          width: var(--card-img-field-size);
+          height: var(--card-img-field-size);
+          border-radius: var(--card-img-field-border-radius);
+
+          background: var(--bs-gray-color);
+        }
+
+        img{
+          --card-img-size: 46px;
+
+          width: var(--card-benefit-img-size);
+          height: var(--card-benefit-img-size);
+
+          transition: transform 0.5s;
+        }
       }
     }
   }
