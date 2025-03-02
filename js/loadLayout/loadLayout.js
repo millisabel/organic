@@ -19,6 +19,16 @@ function loadLayout() {
         })
         .catch(error => console.error(error));
 
+    fetch("/sections/news/news.html")
+        .then(response => {
+            if (!response.ok) throw new Error(`Ошибка загрузки footer: ${response.status}`);
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById("news-content").innerHTML = data;
+        })
+        .catch(error => console.error(error));
+
     fetch("/sections/footer/footer.html")
         .then(response => {
             if (!response.ok) throw new Error(`Ошибка загрузки footer: ${response.status}`);
